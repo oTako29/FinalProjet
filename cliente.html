@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalis Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+    <aside>
+        <div class="toggle">
+            <div class="logo">
+                <img src="WhatsApp_Image_2024-09-25_at_23.07.39-removebg-preview (1).png">
+                <h2>Vitalis <span class="danger">Care</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">
+                    close
+                </span>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a href="#">
+                <span class="material-icons-sharp">
+                    dashboard
+                </span>
+                <h3>Dashboard</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    person_outline
+                </span>
+                <h3>Usúarios</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    receipt_long
+                </span>
+                <h3>Historico</h3>
+            </a>
+            <a href="#" class="active">
+                <span class="material-icons-sharp">
+                    insights
+                </span>
+                <h3>Analytics</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    mail_outline
+                </span>
+                <h3>Tickets</h3>
+                <span class="message-count">27</span>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    inventory
+                </span>
+                <h3>Lista de comissões</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    report_gmailerrorred
+                </span>
+                <h3>Reportar</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    settings
+                </span>
+                <h3>Configurações</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    add
+                </span>
+                <h3>Novo Login</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">
+                    logout
+                </span>
+                <h3>Sair</h3>
+            </a>
+        </div>
+    </aside>
+    <main>
+        <section class="filter">
+            <h2>Filtros de Busca</h2>
+            <label for="regiao">Região:</label>
+            <select id="regiao">
+                <option value="todas">Todas</option>
+                <option value="norte">Norte</option>
+                <option value="sul">Sul</option>
+                <option value="leste">Leste</option>
+                <option value="oeste">Oeste</option>
+            </select>
+
+            <label for="nota">Nota:</label>
+            <select id="nota">
+                <option value="todas">Todas</option>
+                <option value="5">5 Estrelas</option>
+                <option value="4">4 Estrelas</option>
+                <option value="3">3 Estrelas</option>
+            </select>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero">
+                <option value="todos">Todos</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" placeholder="Idade mínima">
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" placeholder="Preço máximo">
+
+            <button onclick="filtrarFreelancers()">Filtrar</button>
+        </section>
+        <section id="freelancers-list">
+            <h2>Freelancers Disponíveis</h2>
+            <ul id="list">
+                <!-- Lista de freelancers será gerada aqui -->
+            </ul>
+        </section>
+    </main>
+    <div class="right-section">
+        <div class="nav">
+            <button id="menu-btn">
+            
+            </button>
+            <div class="dark-mode">
+                <span class="material-icons-sharp active">
+                    light_mode
+                </span>
+                <span class="material-icons-sharp">
+                    dark_mode
+                </span>
+            </div>
+
+            <div class="profile">
+                <div class="info">
+                    <p>Olá, <b>Usuario</b></p>
+                    <small class="text-muted">Cliente / </small>
+                </div>
+            </div>
+
+        </div>
+
+    <script src="cliente.js"></script>
+    <script src="HomePage.js"></script>
+</body>
+</html>
